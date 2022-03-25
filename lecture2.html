@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, Javascript, CSS, Bootstrap, Web Desiging, Frontend, Nested Table in HTML">
+    <meta name="description" content="In this course you will learn hmtl, css, javascript.">
+    <meta name="author" content="Abdul Rehman">
+    <meta http-equiv="refresh" content="30">
+    <title>Nested Table</title>
+</head>
+<body>
+    <!-- Nested Table in HTML -->
+    <table border="2px" cellspacing="0px" width="100%">
+        <!-- Table Header -->
+        <tr>
+            <th>Sr. #</th>
+            <th>Item Name</th>
+            <th>Unit</th>
+            <th>Price</th>
+            <th>Qty.</th>
+            <th>Sub Total</th>
+        </tr>
+        <!-- Table Data -->
+        <tr>
+            <td>1</td>
+            <td>Panadol</td>
+            <td>Pcs</td>
+            <td>2</td>
+            <td>10</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Wintojino</td>
+            <td>Pcs</td>
+            <td>70</td>
+            <td>1</td>
+            <td>70</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Ensure</td>
+            <td>Pcs</td>
+            <td>1500</td>
+            <td>5</td>
+            <td>
+                <!-- Nested Table -->
+                <table border="2px" cellspacing="0px">
+                    <tr>
+                        <th>Discount</th>
+                        <th>Sub Total</th>
+                        <th>W.D. Value</th>
+                    </tr>
+                    <tr>
+                        <td>250</td>
+                        <td>7250</td>
+                        <td>7500</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+           <td>3</td>
+           <td>askjdhfjksadh</td>
+           <td colspan="2"> 45 Pcs</td> 
+           <td>545</td>
+           <td>545454</td>
+        </tr>
+
+    </table>
+</body>
+</html>

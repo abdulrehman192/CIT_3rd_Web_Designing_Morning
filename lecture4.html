@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 4</title>
+</head>
+<body>
+    <!-- Hyperlinks in html -->
+    <!-- local hyper link -->
+    <a href="task8.html" target="_new">Open Task 8</a> <br>
+    <!-- global hyper links -->
+    <a href="https://www.google.com">Open Google PAge</a> <br>
+    <a href="https://www.youtube.com">Open YouTube</a> <br>
+    <a href="mailto:mr.abdulrehman.ar@gmail.com">Send Email</a> <br>
+    <a href="tel:+923089098067">Mobile Number</a> <br> <br>
+    <!-- hyper link using button -->
+    <a href="https://www.facebook.com">
+
+        <button type="button">Open facebook</button>
+
+    </a> <br>
+
+    <!-- hyper link using image -->
+    <a href="https://www.youtube.com">
+        <img src="1.jpg" alt="This is an image" width="300px" height="300px">
+    </a>
+
+    <!-- Form Controls in HTML -->
+    <h1>Form Controls</h1>
+    <form action="#" method="post">
+        <label for="username" name="username">Username</label>
+        <input type="text" name="username" placeholder="Enter Username Here" required> <br>
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="Enter Password Here" required> <br>
+        <input type="checkbox" name="Computer" value="1"> Computer 
+        <input type="checkbox" name="Data Science" value="2"> Data Science <br>
+        <label for="gender">Gender </label> 
+        <input type="radio" name="gender" value="male" checked required> male
+        <input type="radio" name="gender" value="female" required> females <br>
+        <label for="cv">CV : </label>
+        <input type="file" name="cv"  required> <br>
+        <label for="dropdown">Designation</label>
+        <select name="dropdown" required>
+            <option value="Student" selected>Student</option>
+            <option value="Developer">Developer</option>
+            <option value="Trainer">Trainer</option>
+        </select> <br>
+        <label for="address">Address :</label>
+        <textarea name="address" cols="30" rows="5" placeholder="Enter Complete Address Here" required></textarea> <br>
+        <label for="color">Color</label>
+        <input type="color" name="color"> <br>
+        <input type="range"> <br> <br>
+        <label for="date">D.O.B</label>
+        <input type="date"> <br>
+        <label for="time">Time</label>
+        <input type="time" name="time" > <br>
+        <input type="email">
+        <input type="url">
+        <br><input type="submit" value="Send">
+        <input type="reset" value="Reset">
+    </form>
+
+</body>
+</html>
