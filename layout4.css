@@ -1,0 +1,45 @@
+header, footer
+{
+    height: 70px;
+    border: 1px solid black;
+    background-color: aqua;
+}
+
+#main-section
+{
+    display: flex;
+}
+
+#left-column
+{
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    width: 70%;
+    border: 1px solid black;
+    background-color: cadetblue;
+}
+
+#right-sidebar
+{
+    display: flex;
+    height: 450px;
+    width: 30%;
+    border: 1px solid black;
+    background-color: coral;
+}
+
+#top-content
+{
+    display: flex;
+    height: 220px;
+    border: 1px solid black;
+    background-color: red;
+}
+#bottom-content
+{
+    display: flex;
+    height: 230px;
+    border: 1px solid black;
+    background-color: blue;
+}
