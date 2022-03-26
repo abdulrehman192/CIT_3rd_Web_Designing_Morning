@@ -1,0 +1,36 @@
+header
+{
+    display: flex;
+    height: 70px;
+    background-color: grey;
+}
+
+#logo
+{
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    background-color: white;
+    background-image: url('logo.png');
+    background-size: 100%;
+}
+
+#navbar
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-item
+{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+.nav-item:hover{
+    background-color: white;
+    padding: 10px;
+    color: black;
+ }
