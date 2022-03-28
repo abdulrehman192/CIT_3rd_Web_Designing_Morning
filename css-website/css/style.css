@@ -1,0 +1,110 @@
+body
+{
+    margin: 0px;
+}
+header{
+    position: fixed;
+    height: 70px;
+    width: 90%;
+    background-color: aqua;
+    margin: 0px;
+    display: flex;
+    align-items: center;  /* align items center vertically*/
+    justify-content: space-between;
+    
+}
+
+.default-padding
+{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+#logo
+{
+    height: 60px;
+    width: 60px;
+    background-image: url("../images/logo.png");
+    background-size: cover;
+}
+
+.nav-item
+{
+    color: grey;
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-item:hover
+{
+    color: black;
+}
+
+.my-button
+{
+    background-color: lightslategray;
+    border: none;
+    color: white;
+    padding: 10px;
+    width: 150px;
+}
+.my-button:hover
+{
+    background-color: slategrey;
+}
+
+#welcome-image
+{
+    display: flex;
+    height: 420px;
+    background-image: url('../images/2.jpg');
+    background-size: cover;
+}
+
+
+#welcome-content
+{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 40%;
+    height: 420px;
+    align-items: left;
+    justify-content: center;
+}
+
+#about-section
+{
+    display: block;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#column-section
+{
+    display: flex;
+    height: 200px;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.column-3
+{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    text-align: justify;
+    align-items: center;
+    justify-items:left;
+}
+
+.column-icon
+{
+    display: block;
+    width: 30px;
+    height: 30px;
+}
