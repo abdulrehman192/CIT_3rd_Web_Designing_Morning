@@ -711,6 +711,112 @@
             </section>
         </section>
     </section>
+    <h1>Navbar in Bootstrap</h1>
+    <section class="container">
+        <nav class="navbar navbar-light bg-light navbar-expand-md">
+            <a href="index.html" class="navbar-brand ">Brand Name</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navitems" aria-controls="navitems" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <section class="collapse navbar-collapse" id="navitems">
+                <section class="navbar-nav">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="#" class="nav-item nav-link">Teams</a>
+                    <a href="#" class="nav-item nav-link">Services</a>
+                    <a href="#" class="nav-item nav-link">About Us</a>
+                    <a href="#" class="nav-item nav-link">Contact Us</a>
+                </section>
+            </section>
+        </nav>
+    </section>
+    <h1>Nav Tab with panes</h1>
+    <section class="container">
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a href="#hometab" data-toggle="tab" aria-controls="hometab" aria-expanded="true" aria-selected="true" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#abouttab" data-toggle="tab" aria-controls="abouttab" aria-expanded="false" aria-selected="false" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#contacttab" data-toggle="tab" aria-controls="contacttab" aria-expanded="false" aria-selected="false" class="nav-link">Contact</a>
+            </li>
+        </ul>
+        <section class="tab-content">
+            <section class="tab-pane active" role="tabpanel" aria-expanded="true" id="hometab">
+                <h4>Home Tab</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sunt consectetur numquam. Facilis est, harum inventore doloribus incidunt eveniet, cumque excepturi similique praesentium molestiae iusto. Mollitia porro inventore dolore quas.</p>
+                <button class="btn btn-primary">Home Tab</button>
+            </section>
+            <section class="tab-pane " role="tabpanel" aria-expanded="false" id="abouttab">
+                <h4>About Tab</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sunt consectetur numquam. Facilis est, harum inventore doloribus incidunt eveniet, cumque excepturi similique praesentium molestiae iusto. Mollitia porro inventore dolore quas.</p>
+                <button class="btn btn-primary">About Tab</button>
+            </section>
+            <section class="tab-pane " role="tabpanel" aria-expanded="false" id="contacttab">
+                <h4>Contact Tab</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sunt consectetur numquam. Facilis est, harum inventore doloribus incidunt eveniet, cumque excepturi similique praesentium molestiae iusto. Mollitia porro inventore dolore quas.</p>
+                <button class="btn btn-primary">Contact Tab</button>
+            </section>
+        </section>
+    </section>
+    <h1>Badges in Bootsrap</h1>
+    <section class="container">
+        <button type="button" class="btn btn-secondary">Notifications <span class="badge badge-light">10</span></button>
+        <span class="badge badge-primary">10 messages</span>
+    </section>
+    <h1>List Groups in Bootstrap</h1>
+    <section class="container">
+        <ul class="list-group">
+            <li class="list-group-item">Group Item 1</li>
+            <li class="list-group-item">Group Item 2</li>
+            <li class="list-group-item active">Group Item 3</li>
+            <li class="list-group-item">Group Item 4</li>
+            <li class="list-group-item disabled">Group Item 5</li>
+        </ul>
+    </section>
+    <h1>Media Objects in Bootstrap</h1>
+    <section class="container">
+        <h2>Left aligned media</h2>
+        <section class="media">
+            <img src="images/1.jpg" alt="left media" width="150px" height="150px">
+            <section class="media-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed illo perspiciatis excepturi recusandae ut beatae quidem expedita maxime commodi corrupti soluta id, ea dolorem laudantium illum est perferendis distinctio nam.</p>
+            </section>
+        </section>
+        <h2>right aligned media</h2>
+        <section class="media">
+            <section class="media-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste sit quisquam aspernatur illum, repudiandae architecto corrupti, quod est enim soluta numquam pariatur quae deleniti quaerat cupiditate autem recusandae rem quibusdam.</p>
+            </section>
+            <img src="images/1.jpg" alt="left media" width="150px" height="150px">
+        </section>
+    </section>
+
+    <h1>Modals in Bootstraps</h1>
+    <section class="container">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1" aria-controls="modal1" aria-hidden="true">Open Modal</button>
+        <section class="modal fade" id="modal1" tabindex="1" role="dialog" >
+            <section class="modal-dialog" role="document">
+                <section class="modal-content">
+                    <section class="modal-header">
+                        <h5 class="modal-title">Modal Title</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </section>
+                    <section class="modal-body">
+                        <h5>content heading</h5>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptates id quia illo ducimus? Voluptatibus quas aperiam totam nemo consectetur quaerat, omnis, eaque accusamus ipsam, reiciendis cumque quae molestias consequuntur?
+                        </p>
+                    </section>
+                    <section class="modal-footer">
+                        <button type="button" class="btn btn-primary">Send</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </section>
 
 
     <!-- firstly we link jquery.min, pooper.js, bootstrap.buldle.min, lastly script.js -->
