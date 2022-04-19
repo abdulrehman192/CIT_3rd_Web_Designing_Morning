@@ -10,9 +10,9 @@
 </head>
 <body>
     <!-- Website Header -->
-    <section class=" bg-light">
+    <section class=" bg-light ">
         <!-- website navbar -->
-        <nav class="navbar navbar-light navbar-expand-md container">
+        <nav class="navbar navbar-light navbar-expand-md container ">
             <a href="index.html" class="navbar-brand nav-link">
                 <img src="images/logo.png" alt="Brand Logo" width="50px" height="50px">
             </a>
@@ -21,11 +21,11 @@
             </button>
             <section class="collapse navbar-collapse" id="navitems">
                 <section class="navbar-nav">
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="index.html" class="nav-item nav-link ">Home</a>
                     <a href="services.html" class="nav-item nav-link">Services</a>
                     <a href="about.html" class="nav-item nav-link">About</a>
                     <a href="team.html" class="nav-item nav-link">Team</a>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <a href="contact.html" class="nav-item nav-link active">Contact</a>
                 </section>
                 <section class="dropdown ml-auto" id="dropdown">
                     <button type="button" class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" id="landrop">Choose Language</button>
@@ -39,7 +39,109 @@
         </nav>
     </section>
 
- 
+  <!-- website main content section -->
+    <section class="container my-5">
+        <h1 class="text-center">Contact Us</h1>
+        <section class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/OmyYB16MNOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <section class="row mt-5 mb-3">
+            <section class="col-12 col-lg-6 my-3">
+                <h4>Address</h4>
+                <ul class="list-unstyled">
+                    <li><b>Professional Tech</b></li>
+                    <li>M.A. Jinnah Road</li>
+                    <li>56300, Okara</li>
+                    <li><a href="tel:+923089098067"><i class="fas fa-phone-alt"></i> (0092)-308-9098-067</a></li>
+                    <li><a href="mailto:mr.abdulrehman.ar@gmail.com"><i class="fas fa-envelope"></i> mr.abdulrehman.ar@gmail.com</a></li>
+                </ul>
+            </section>
+            <section class="col-12 col-lg-6 my-3">
+                <h4>Opening Hours</h4>
+                <ul class="list-unstyled">
+                    <li>Monday - Thursday : <span class="float-right">10am - 6pm</span></li>
+                    <li>Friday - Saturday : <span class="float-right">10am - 8pm</span></li>
+                    <li>Sunday : <span class="float-right">10am - 9pm</span></li>
+                </ul>
+            </section>
+        </section>
+        <section class="row my-3">
+            <section class="col-12 col-lg-6">
+                <h3>Send us a message :</h3>
+
+                <section class="row">
+                    <section class="col-12 col-md-6">
+                        <section class="form-group">
+                            <label for="name">Name : </label>
+                            <section class="input-group align-items-center">
+                                <span class="input-group-addon"><i class="fas fa-user "></i></span>
+                                <input type="text" placeholder="Enter Your Name " class="form-control" required>
+                            </section>
+                        </section>
+                    </section>
+                    <section class="col-12 col-md-6">
+                        <section class="form-group">
+                            <label for="email">Email : </label>
+                            <section class="input-group align-items-center">
+                                <span class="input-group-addon"><i class="fas fa-envelope "></i></span>
+                                <input type="email" placeholder="Enter Your Email " class="form-control" required>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+
+                <section class="row">
+                    <section class="col-12 col-md-6">
+                        <section class="form-group">
+                            <label for="phole">Telephone : </label>
+                            <section class="input-group align-items-center">
+                                <span class="input-group-addon"><i class="fas fa-phone-alt "></i></span>
+                                <input type="tel" placeholder="Enter Your Telephone " class="form-control" required>
+                            </section>
+                        </section>
+                    </section>
+                    <section class="col-12 col-md-6">
+                        <section class="form-group">
+                            <label for="department">Department : </label>
+                            <section class="input-group align-items-center">
+                                <span class="input-group-addon"><i class="fas fa-home"></i></span>
+                                <select name="department" required class="form-control">
+                                    <option value="select" selected>Select Department</option>
+                                    <option value="Sales">Sales</option>
+                                    <option value="Purchase">Purchase</option>
+                                    <option value="HR">HR</option>
+                                </select>
+                            </section>
+                        </section>
+                        
+                    </section>
+                </section>
+                <section class="row">
+                    <section class="col-12">
+                        <section class="form-group">
+                            <label for="phole">Message : </label>
+                            <section class="input-group align-items-center">
+                                <span class="input-group-addon"><i class="fas fa-envelope "></i></span>
+                                <textarea name="message" cols="30" rows="5" class="form-control" required></textarea>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+                <section class="row">
+                    <section class="col-12">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="reset" class="btn btn-light">Reset</button>
+                    </section>
+                </section>
+            </section>
+            <!-- google map column -->
+            <section class="col-12 col-lg-6">
+                <section class="embed-responsive embed-responsive-4by3">
+                    
+                </section>
+            </section>
+        </section>
+    </section>  
 
     <!-- website footer -->
     <footer class="bg-light">
