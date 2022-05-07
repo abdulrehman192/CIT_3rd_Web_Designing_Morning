@@ -59,3 +59,127 @@ console.log("Div = "+ div);
 let mod = i % j;
 console.log("Mod = "+ mod);
 
+// comparison operators
+i = 25;
+let o = "25";
+console.log(i + o);
+check = (i == o); // loosely  comparison opertor
+console.log("loosely comparison : "+ check);
+
+check = (i === o); //tightly comparison operator
+console.log("tightly comparison : "+ check);
+
+check = (i != 25); // not equal to operator
+console.log("not equal operator : " + check);
+
+check = (i > 20); // greater than operator
+console.log("greater than operator : " + check);
+
+check = (i < 20); // less than operator
+console.log("less than operator : " + check);
+
+check = (i <= 20); //less than or equal to operator
+console.log("less than or equal to operator : " + check);
+
+check = (i >= 20); //greater than or equal to operator
+console.log("greater than or equal to operator : " + check);
+
+// logical operators => AND, OR, NOT
+
+check = (i >= 20) && (i <= 24); //when left and right both are true then overall result will be true
+console.log("AND : "+ check); 
+
+check = (i >= 20) || (i <= 24); //when left and right both are false then overall result will be false
+console.log("OR : "+ check); 
+
+check = !check; //Not Operator or bit shifting Operator
+console.log("Not : "+ check);
+
+// conditional structure or if-else statement
+
+let age = 25;
+if(age >= 18)
+{
+    console.log("You are 18+ ");
+}
+else
+{
+    console.log("You are under 18");
+}
+
+// series of if-else statement
+
+//calculate the grade using marks
+
+let marks = prompt("Enter Your Marks");
+marks = Number(marks); //type casting
+
+if(marks >= 50 && marks <= 60)
+{
+    console.log("Your Grade is D");
+}
+else if(marks > 60 && marks <= 70)
+{
+    console.log("Your Grade is C");
+}
+else if(marks > 70 && marks <=80)
+{
+    console.log("Your Grade is B");
+}
+else if(marks > 80 && marks <= 90)
+{
+    console.log("Your Grade is A");
+}
+else if(marks > 90 && marks <=100)
+{
+    console.log("Your Grade is A+")
+}
+else if( marks >=0 && marks < 50)
+{
+    console.log("You are Fail");
+}
+else
+{
+    console.log("Invalid Input")
+}
+
+let username = prompt("Enter username");
+let password = prompt("Enter Password");
+
+if(username === "Admin" && password === "pakistan")
+{
+    console.log("Login Successfully");
+}
+else
+{
+    console.log("Incorrect username or password");
+}
+
+// switch case statement
+
+a = 25;
+b = 10;
+
+let operation = "-";
+
+switch(operation)
+{
+    case "+":
+       console.log("Sum = "+ (a + b)); 
+       break;
+    case "-":
+        console.log("Sub = "+ (a - b)); 
+       break;
+    case "*":
+        console.log("Multi = "+ (a * b)); 
+       break;
+    case "/":
+        console.log("Div = "+ (a / b)); 
+       break;
+    case "%":
+        console.log("Mod = "+ (a % b)); 
+       break;
+    default:
+        console.log("Invalid Input");
+        break;
+}
