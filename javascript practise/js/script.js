@@ -183,3 +183,79 @@ switch(operation)
         console.log("Invalid Input");
         break;
 }
+
+
+    // Iterative structure
+    // Loops => repeat the same work
+
+    //for loop
+
+    for(let i = 1; i <= 10; i++)
+    {
+        console.log("Hello World " + i);
+    }
+
+    // while loop
+
+    let v = 1;  //initializer
+    while(v <= 100) //condition
+    {
+        console.log(v +" Hello World ");
+        v++;  // step counter / increament 
+    }
+
+    // do - while loop
+
+    v = 1;
+    do
+    {
+        console.log("Hello Dear " + v);
+        v++;
+    }while(v <= 10)
+
+
+    //print the multiplication table of given number
+    // 2 * 1 = 2
+    // 2 * 2 = 4
+    // 2 * 3 = 6
+    
+    let num = 5;
+    for(let i = 1; i <= 10; i++)
+    {
+        console.log(num + " * " + i + " = " + (num * i));
+    }
+
+    // sum the first 100 natural number
+    // 1+2+3+4+5+6+7+89......+100
+
+    sum = 0;
+    for(let i = 1; i <= 100; i++)
+    {
+        sum = sum + i;
+    }
+
+    console.log("Sum = "+ sum);
+
+    // print 50 even numbers
+
+    for(let i = 1 ; i <= 50; i++)
+    {
+        if(i % 2 == 0)
+        {
+            console.log(i);
+        }
+    }
+
+    // draw the given pattern
+    /*
+
+    *
+    **
+    ***
+    ****
+    *****
+    ******
+    *******
+    ********
+
+    */
