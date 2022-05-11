@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/all.css" type="text/css">
+</head>
+<body class="bg-primary">
+
+    <section class="container">
+
+        <h1 class="text-light text-center my-5">Todo List</h1>
+
+        <ul class="list-group align-items-center todos">
+            <li class="list-group-item w-50  "><b>Buy 1 Liter Milk</b> <i class="fas fa-trash-alt float-right delete"></i></li>
+        </ul>
+
+        <form action="#" class="text-center my-5 add">
+            <label for="add"><h4 class="text-light">Add new todo...</h4></label>
+            <input type="text" name="add" class="form-control w-50 mx-auto" placeholder="Enter Todo Text Here">
+            <button class="btn btn-warning mt-3" onclick="sendData()">Add to List</button>
+        </form>
+
+    </section>
+
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+</body>
+</html>

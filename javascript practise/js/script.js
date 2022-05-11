@@ -259,3 +259,233 @@ switch(operation)
     ********
 
     */
+
+
+    let pattern = "";
+    for(let i = 1; i <= 8; i++)
+    {
+        pattern = pattern + "*";
+        // pattern += "*";
+        console.log(pattern);
+    }
+
+    /*
+
+    1
+    12
+    123
+    1234
+    12345
+    123456
+    1234567
+    12345678
+
+    */
+
+     pattern = "";
+    for(let i = 1; i <= 8; i++)
+    {
+        pattern = pattern + i;
+        // pattern += "*";
+        console.log(pattern);
+    }
+
+    let characters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+
+    // for in loops
+
+    for(let elem in characters)
+    {
+        console.log(characters[elem]);
+    }
+
+    for(let i = 0; i < characters.length; i++)
+    {
+        console.log(characters[i]);
+    }
+
+    
+    // nested loops 
+
+    //outer loop
+    for(let i = 1; i <= 10; i++)
+    {
+        console.log("Outer loop "+ i);
+        //inner loop
+        for(let j =1 ; j <= 10; j++)
+        {
+            console.log("Inner Loop "+ j);
+        }
+    }
+
+    // find the given number is prime or not
+
+    num = 76;
+    let count = 0;
+    for(let i = 2; i <= num; i++)
+    {
+        if(num % i == 0)
+        {
+            console.log(i);
+            count++;
+        }
+    }
+
+    if(count == 1)
+    {
+        console.log(num + " is a prime number");
+    }
+    else
+    {
+        console.log(num + " is a composite number");
+    }
+
+
+    //functions in javascript
+
+    // example function
+
+    //function definition
+    function printHelloWorld()
+    {
+        console.log("Hello World");
+    }
+
+    // function call
+    printHelloWorld();
+
+    // there are 4 types of function
+
+    // function with no return and no perameter
+
+    function print_name(){
+        console.log("Abdul Rehman");
+    }
+
+    print_name();
+
+    // function with return and no perameter
+
+    function get_name()
+    {
+        return "My name is Rehman";
+    }
+
+    let data = get_name();
+    console.log(data);
+
+    // function with no return and with perameter
+
+    function add2nums(a , b)
+    {
+        console.log("sum = " + (a+b));
+    }
+
+    add2nums(12, 15);
+    add2nums(12, 45);
+
+    //funtion with return and with perameters
+
+    function multiply(a, b)
+    {
+        return a * b;
+    }
+
+    let res = multiply(10,2);
+
+    console.log(res);
+    res = multiply(17,82);
+
+    console.log(res);
+
+    
+    // objects 
+    let car = {
+        "Name": 'Honda Civic',
+        "Model": 2022,
+        "Engine Power": '1800CC',
+        "Color": 'Black',
+        "Doors": 4,
+        "runing": function()
+        {
+            console.log("Car is running");
+        },
+        "stopped": function()
+        {
+            console.log("Car is stopped");
+        }
+    };
+
+    console.log(car.Name);
+    console.log(car.Model);
+
+    car.Model = 2023;
+    console.log(car.Model);
+    car.runing();
+
+
+    let copy = car; //reference to the object
+    copy.Name = "Honda City";
+    console.log(car);
+    console.log(copy);
+
+    // global variables
+    let firstName = "Ali";
+    let lastName = "Ahmad";
+    let address = "Okara";
+
+    function Person(first, last, addr)
+    {
+        this.firstName = first;
+        this.lastName = last;
+        this.address = addr;
+    }
+
+    let father = new Person("Abdul", "Rehman", "Okara");
+    let mother = new Person("Hina", "Rehman", "Okara");
+
+    //global variable call
+    console.log(firstName);
+    
+    console.log(father.firstName);
+
+    console.log(mother.firstName);
+
+    // page redirection in javascript
+
+    function redirect()
+    {
+        let url = "https://www.google.com";
+        window.location.replace(url);
+    }
+
+    // page refresh in javascript
+
+    function refresh()
+    {
+        window.location.reload();
+    }
+
+    // auto refresh page
+
+    function autorefresh(time)
+    {
+        window.setTimeout(
+            window.location.reload(),
+            time
+        );
+    }
+
+    // show alert
+
+    function showAlert()
+    {
+        alert("Hi I am a alert dialogue from javascript")
+    }
+
+
+    // show confirmation
+    function showConfirm()
+    {
+        confirm("Do you want to delete this record?");
+    }
