@@ -121,18 +121,11 @@ function set_output(data)
             
 
             //arithmatic operations
-            if(this.id != "clear")
-            {
-                let output = get_output();
-                history += output + this.id;
-                set_history(history);
-                set_output("0");
-
-            }
-
+            let output = get_output();
             if(this.id == "=")
-            {
-                history = history.substr(0, history.length -1)
+            {   history += output + this.id;
+                history = history.substr(0, history.length -1);
+                set_history(history);
                 let result = eval(history);
                 set_output(result);
                 result = "0";
@@ -140,14 +133,20 @@ function set_output(data)
                 output = "";
             }
 
-            if(this.id == "clear")
+            else if(this.id == "clear")
             {
                 _clear();
             }
 
-            if(this.id == "backspace")
+            else if(this.id == "backspace")
             {
                 backspace();
+            }
+            else
+            {
+                history += output + this.id;
+                set_history(history);
+                set_output("0");
             }
  
         });
