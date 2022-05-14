@@ -34,9 +34,32 @@ function set_output(data)
     output.innerText = data;
 }
 
+    function _clear()
+    {
+        set_history("0");
+        set_output("0");
+    }
+
+    function backspace()
+    {
+        let data  = get_output();
+        if(data != "0")
+        {
+        if(data.length > 0)
+        {
+            data = data.substr(0, data.length - 1);
+            set_output(data);
+        }
+        if(data.length == 0)
+        {
+            set_output("0");
+        }
+    }
+    }
+
 // 
 
-    for(let i = 0; i <= number.length; i++)
+    for(let i = 0; i < number.length; i++)
     {
         number[i].addEventListener("click", function (){
         let data = get_output();
@@ -65,12 +88,68 @@ function set_output(data)
             {
                 data = data + this.id;
             }
+
+            if(dot == "0")
+            {
+                data = "0.";
+            }
         }
         else{
             data = data + this.id;
         }
-        
         set_output(data);
+
+        if(this.id == "00")
+        {
+            let a = get_output();
+            if(a == "0" || a == "00")
+            {
+                set_output("0");
+            }
+        }
+        
+        
+        });
+    }
+
+    let history = "";
+    // operator clicks
+
+    for(let i = 0; i < operator.length; i++)
+    {
+        operator[i].addEventListener("click", function (){
+            
+
+            //arithmatic operations
+            if(this.id != "clear")
+            {
+                let output = get_output();
+                history += output + this.id;
+                set_history(history);
+                set_output("0");
+
+            }
+
+            if(this.id == "=")
+            {
+                history = history.substr(0, history.length -1)
+                let result = eval(history);
+                set_output(result);
+                result = "0";
+                history = "";
+                output = "";
+            }
+
+            if(this.id == "clear")
+            {
+                _clear();
+            }
+
+            if(this.id == "backspace")
+            {
+                backspace();
+            }
+ 
         });
     }
 
